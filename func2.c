@@ -12,7 +12,7 @@
 
 void pop_stack(stack_t **head, unsigned int num)
 {
-    /* declaring variable */
+	/* declaring variable */
 	stack_t *tp;
 
 	if (*head == NULL)

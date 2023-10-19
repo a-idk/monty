@@ -10,6 +10,8 @@
 #include <ctype.h>
 #include <sys/types.h>
 
+#define  _POSIX_C_SOURCE 200809L
+
 /* custom defined structures/varibles types */
 
 /**
@@ -62,9 +64,9 @@ typedef struct instruction_s
 } instruction_t;
 
 /*************PROTOTYPES********************/
-/* char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size); */
-/* ssize_t getstdin(char **lineptr, int file); */
-/* char  *clean_line(char *content); */
+char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
+ssize_t getstdin(char **lineptr, int file);
+char  *clean_line(char *content);
 void push_node(stack_t **head, unsigned int number);
 void print_all_stack(stack_t **head, unsigned int number);
 void print_top_stack(stack_t **head, unsigned int number);
